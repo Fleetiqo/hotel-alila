@@ -1,15 +1,16 @@
 # Hôtel Alila - Website
 
-Modern, responsive website for Hôtel Alila in Morin-Heights, Laurentides.
+Modern, responsive website for Hôtel Alila in Morin-Heights, Laurentides, Quebec.
+
+🌐 **Live Site**: [View on GitHub Pages](https://YOUR_USERNAME.github.io/hotel-alila/)
 
 ## Features
 
-- ✨ Modern, clean design
+- ✨ Modern, rustic design with earthy color palette
 - 📱 Fully responsive (mobile, tablet, desktop)
-- 🎨 Smooth animations with AOS
-- 🏨 10 different room types showcased
+- 🏨 10 different room types with high-quality photos
 - 📍 Interactive location section with map
-- 🖼️ Beautiful photo gallery
+- 🖼️ Beautiful photo gallery with actual hotel images
 - 📧 Contact form with reservation options
 - 🌐 Bilingual ready (French/English)
 
@@ -29,15 +30,22 @@ Modern, responsive website for Hôtel Alila in Morin-Heights, Laurentides.
 ## Development
 
 ```bash
+# Install dependencies
 npm install
+
+# Run development server
 npm run dev
-```
 
-## Build
-
-```bash
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
+
+## Deployment
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed GitHub Pages deployment instructions.
 
 ## Contact Information
 
@@ -62,5 +70,10 @@ npm run build
 - Vite.js
 - Vanilla JavaScript
 - CSS3 with modern features
-- AOS (Animate On Scroll)
 - Google Fonts (Playfair Display, Inter)
+- Responsive design
+- GitHub Pages deployment
+
+## License
+
+© 2024 Hôtel Alila. All rights reserved.
