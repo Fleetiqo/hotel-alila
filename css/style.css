@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/rooms.css");
+@import url("sections/location.css");
+@import url("sections/gallery.css");
+@import url("sections/contact.css");
+@import url("sections/footer.css");
+
+:root {
+  --playfair: "Playfair Display", serif;
+  --inter: "Inter", sans-serif;
+
+  --primary-color: #8b4513;
+  --secondary-color: #5d3a1a;
+  --accent-color: #d2691e;
+  --text-dark: #3e2723;
+  --text-light: #6d4c41;
+  --bg-light: #f5e6d3;
+  --bg-cream: #faf5ee;
+  --white: #fffef7;
+  --earth-red: #a0522d;
+  --earth-yellow: #daa520;
+  --earth-green: #556b2f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-cream);
+  font-family: var(--inter);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: var(--playfair);
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+}
+
+.section__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section__description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin: 24px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 36px;
+  }
+  
+  .section__subtitle {
+    font-size: 16px;
+  }
+}

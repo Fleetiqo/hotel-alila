@@ -1,0 +1,126 @@
+.rooms {
+  padding: 100px 60px;
+  background: var(--bg-cream);
+}
+
+.rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.room__card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 4px 20px rgba(139, 69, 19, 0.15);
+}
+
+.room__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(139, 69, 19, 0.25);
+  border-color: var(--accent-color);
+}
+
+.room__card--featured {
+  border-color: var(--accent-color);
+  border-width: 2px;
+}
+
+.room__card--luxury {
+  border-color: var(--earth-red);
+  border-width: 2px;
+}
+
+.room__card--suite {
+  border-color: var(--earth-yellow);
+  border-width: 2px;
+  background: linear-gradient(135deg, #fffef7 0%, #f5e6d3 100%);
+}
+
+.room__image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.room__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.room__card:hover .room__image img {
+  transform: scale(1.1);
+}
+
+.room__content {
+  padding: 24px;
+  position: relative;
+}
+
+.room__content h3 {
+  font-family: var(--playfair);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.room__type {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.room__description {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+
+.room__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 16px;
+  background: var(--accent-color);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.room__badge--luxury {
+  background: var(--earth-red);
+  color: var(--white);
+}
+
+.room__badge--suite {
+  background: var(--secondary-color);
+  color: var(--earth-yellow);
+}
+
+@media screen and (max-width: 768px) {
+  .rooms {
+    padding: 60px 24px;
+  }
+
+  .rooms__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .room__image {
+    height: 220px;
+  }
+}

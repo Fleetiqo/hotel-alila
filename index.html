@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Hôtel Alila - Morin-Heights | Hébergement Laurentides</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h2>Hôtel <span>ALiLA</span></h2>
+      </div>
+
+      <ul class="header__menu">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#rooms">Chambres</a></li>
+        <li><a href="#location">Emplacement</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="lang-switch">English</a></li>
+      </ul>
+
+      <div class="header__menu-mobile">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-content-info">
+        <p class="hero__badge">Morin-Heights • Laurentides</p>
+        <h1>Votre refuge dans les Laurentides</h1>
+        <p>Situé au cœur de Morin-Heights, à quelques minutes de Saint-Sauveur. Profitez d'un séjour paisible au bord de la rivière avec accès direct aux activités de plein air.</p>
+        
+        <div class="hero-content__buttons">
+          <button class="hero-content__primary-button">Réserver Maintenant</button>
+          <button class="hero-content__secondary-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            Voir l'emplacement
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-features">
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <p>Au bord de la<br>Rivière à Simon</p>
+        </div>
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <p>Accès direct au<br>Corridor aérobique</p>
+        </div>
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <p>À 6 minutes de<br>Saint-Sauveur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section class="rooms" id="rooms">
+    <h2 class="section__title">Nos Chambres</h2>
+    <p class="section__subtitle">Confort et élégance pour votre séjour</p>
+
+    <div class="rooms__grid">
+      <div class="room__card">
+        <div class="room__image">
+          <img src="/R_Queen.jpg" alt="Chambre Queen" />
+        </div>
+        <div class="room__content">
+          <h3>«Latonia»</h3>
+          <p class="room__type">1 lit Queen</p>
+          <p class="room__description">Chambre confortable avec tout le nécessaire pour un séjour agréable.</p>
+        </div>
+      </div>
+
+      <div class="room__card">
+        <div class="room__image">
+          <img src="/R_King.jpg" alt="Chambre King" />
+        </div>
+        <div class="room__content">
+          <h3>«Labelle»</h3>
+          <p class="room__type">1 lit King</p>
+          <p class="room__description">Espace généreux avec lit King pour un confort optimal.</p>
+        </div>
+      </div>
+
+      <div class="room__card">
+        <div class="room__image">
+          <img src="/R_2Queen.jpg" alt="Chambre 2 Queen" />
+        </div>
+        <div class="room__content">
+          <h3>«Ladonna»</h3>
+          <p class="room__type">2 lits Queen</p>
+          <p class="room__description">Idéale pour les familles ou groupes d'amis.</p>
+        </div>
+      </div>
+
+      <div class="room__card">
+        <div class="room__image">
+          <img src="/R_2QueenBois.jpg" alt="Chambre avec plancher bois" />
+        </div>
+        <div class="room__content">
+          <h3>«Latisha»</h3>
+          <p class="room__type">2 lits Queen</p>
+          <p class="room__description">Avec plancher de bois franc pour une ambiance chaleureuse.</p>
+        </div>
+      </div>
+
+      <div class="room__card room__card--featured">
+        <div class="room__image">
+          <img src="/R_KingFoyer.jpg" alt="Chambre avec foyer" />
+        </div>
+        <div class="room__content">
+          <h3>«Kimila»</h3>
+          <p class="room__type">1 lit King avec foyer</p>
+          <p class="room__description">Foyer au gaz propane pour des soirées romantiques.</p>
+        </div>
+      </div>
+
+      <div class="room__card room__card--featured">
+        <div class="room__image">
+          <img src="/R_KingFoyerBois.jpg" alt="Chambre King foyer bois" />
+        </div>
+        <div class="room__content">
+          <h3>«Kingston»</h3>
+          <p class="room__type">1 lit King</p>
+          <p class="room__description">Foyer au gaz propane et plancher de bois franc.</p>
+        </div>
+      </div>
+
+      <div class="room__card room__card--luxury">
+        <div class="room__image">
+          <img src="/R_KingTourbillon.jpg" alt="Chambre avec bain tourbillon" />
+        </div>
+        <div class="room__content">
+          <h3>«Oméga»</h3>
+          <p class="room__type">1 lit King avec bain tourbillon</p>
+          <p class="room__description">Bain tourbillon et plancher de bois franc.</p>
+        </div>
+      </div>
+
+      <div class="room__card room__card--luxury">
+        <div class="room__image">
+          <img src="/R_KingTourbillonFoyer.jpg" alt="Chambre Tropicana" />
+        </div>
+        <div class="room__content">
+          <h3>«Tropicana»</h3>
+          <p class="room__type">1 lit King</p>
+          <p class="room__description">Bain tourbillon, foyer au gaz propane, plancher de bois franc.</p>
+        </div>
+      </div>
+
+      <div class="room__card room__card--suite">
+        <div class="room__image">
+          <img src="/R_Suite_Junior.jpg" alt="Suite Junior" />
+        </div>
+        <div class="room__content">
+          <h3>«Yamaska»</h3>
+          <p class="room__type">Suite Junior</p>
+          <p class="room__description">1 lit King, bain tourbillon, foyer au gaz propane, plancher de bois franc.</p>
+        </div>
+      </div>
+
+      <div class="room__card room__card--suite">
+        <div class="room__image">
+          <img src="/R_Suite_DeLuxe.jpg" alt="Suite de Luxe" />
+        </div>
+        <div class="room__content">
+          <h3>«Romantica»</h3>
+          <p class="room__type">Suite de Luxe</p>
+          <p class="room__description">1 lit King, bain tourbillon, foyer au bois, plancher de bois franc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location" id="location">
+    <div class="location__content">
+      <h2 class="section__title">Emplacement Idéal</h2>
+      <p class="section__description">
+        Hôtel ALiLA est situé <strong>au coin de la route 364 Ouest (Chemin Jean Adam) et la route 329 (Chemin du Village)</strong>, 
+        juste à côté des feux de circulation, en face du Marché d'alimentation <strong>IGA</strong> à Morin-Heights.
+      </p>
+
+      <div class="location__highlights">
+        <h3>À proximité:</h3>
+        <ul>
+          <li>À 6 minutes du centre-ville de St-Sauveur et Factories St-Sauveur</li>
+          <li>À 7 minutes du Parc aquatique du Sommet Saint-Sauveur</li>
+          <li>À 8 minutes du Ski Mont Saint-Sauveur</li>
+          <li>À 3 minutes du Ski Morin-Heights</li>
+          <li>À 2 minutes du Club de Golf Le Balmoral</li>
+          <li>À 1 minute du Parc Lummis aux abords de la Rivière à Simon</li>
+          <li>Accès direct au Parc du Corridor aérobique à pied ou à vélo</li>
+        </ul>
+      </div>
+
+      <div class="location__address">
+        <h4>Adresse:</h4>
+        <p><strong>500, Route 364 Ouest, Morin-Heights, Québec, J0R 1H0</strong></p>
+        <p class="location__gps">GPS: Latitude 45.9036, Longitude -74.2456</p>
+        <p class="location__alt">Adresse alternative pour GPS: <strong>716, Chemin du Village, Morin-Heights, QC J0R 1H0</strong></p>
+      </div>
+    </div>
+
+    <div class="location__map">
+      <a href="https://goo.gl/maps/JcniFjvv8Rs" target="_blank" rel="noopener">
+        <img src="/map-alila.jpg" alt="Carte Hôtel Alila - Morin-Heights" />
+        <div class="location__map-overlay">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <p>Cliquez pour ouvrir Google Maps</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2 class="section__title">Galerie Photos</h2>
+    <p class="section__subtitle">Découvrez notre hôtel et ses environs</p>
+
+    <div class="gallery__grid">
+      <div class="gallery__item">
+        <img src="/Exterior1.jpg" alt="Extérieur hôtel" />
+        <div class="gallery__overlay">
+          <p>Extérieur de l'hôtel</p>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <img src="/Garden1_Flower1.jpg" alt="Jardin" />
+        <div class="gallery__overlay">
+          <p>Jardin fleuri</p>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <img src="/RiverFront_3_relax.jpg" alt="Rivière" />
+        <div class="gallery__overlay">
+          <p>Au bord de la rivière</p>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <img src="/Garden2_waterFall.jpg" alt="Cascade" />
+        <div class="gallery__overlay">
+          <p>Cascade dans le jardin</p>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <img src="/Ski_Hill2.jpg" alt="Ski" />
+        <div class="gallery__overlay">
+          <p>Ski à proximité</p>
+        </div>
+      </div>
+
+      <div class="gallery__item">
+        <img src="/Garden3.jpg" alt="Nature" />
+        <div class="gallery__overlay">
+          <p>Jardin et terrasse</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact__content">
+      <h2 class="section__title">Contactez-Nous</h2>
+      <p class="section__description">Réservez votre séjour dès maintenant ou contactez-nous pour toute question.</p>
+      
+      <div class="contact__info">
+        <div class="contact__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <div>
+            <strong>Téléphone</strong>
+            <p>1 450-644-0168</p>
+            <p>Sans frais: 1-844-252-1899</p>
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <div>
+            <strong>Courriel</strong>
+            <p><a href="mailto:HOTEL@ALiLA.CA">HOTEL@ALiLA.CA</a></p>
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <div>
+            <strong>Adresse</strong>
+            <p>500, Route 364 Ouest</p>
+            <p>Morin-Heights, QC J0R 1H0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__form">
+      <form>
+        <input type="text" placeholder="Votre Nom" required />
+        <input type="email" placeholder="Votre Courriel" required />
+        <input type="tel" placeholder="Votre Téléphone" required />
+        <input type="date" placeholder="Date d'arrivée" required />
+        <input type="date" placeholder="Date de départ" required />
+        <select required>
+          <option value="">Type de Chambre</option>
+          <option value="latonia">Latonia - 1 lit Queen</option>
+          <option value="labelle">Labelle - 1 lit King</option>
+          <option value="ladonna">Ladonna - 2 lits Queen</option>
+          <option value="latisha">Latisha - 2 lits Queen (bois franc)</option>
+          <option value="kimila">Kimila - 1 lit King avec foyer</option>
+          <option value="kingston">Kingston - 1 lit King, foyer, bois franc</option>
+          <option value="omega">Oméga - 1 lit King, bain tourbillon</option>
+          <option value="tropicana">Tropicana - 1 lit King, bain tourbillon, foyer</option>
+          <option value="yamaska">Yamaska - Suite Junior</option>
+          <option value="romantica">Romantica - Suite de Luxe</option>
+        </select>
+        <textarea placeholder="Message ou demandes spéciales..." rows="4"></textarea>
+        <button type="submit">Envoyer la Demande</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__section">
+        <h3>Hôtel <span>ALiLA</span></h3>
+        <p>Morin-Heights, Laurentides</p>
+        <p>Votre refuge dans les montagnes</p>
+      </div>
+
+      <div class="footer__section">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#rooms">Chambres</a></li>
+          <li><a href="#location">Emplacement</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h4>Chambres</h4>
+        <ul>
+          <li><a href="#rooms">Chambres Standard</a></li>
+          <li><a href="#rooms">Chambres avec Foyer</a></li>
+          <li><a href="#rooms">Chambres Luxe</a></li>
+          <li><a href="#rooms">Suites</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h4>Contact</h4>
+        <p>Tél: 1 450-644-0168</p>
+        <p>Sans frais: 1-844-252-1899</p>
+        <p><a href="mailto:HOTEL@ALiLA.CA">HOTEL@ALiLA.CA</a></p>
+        <p><a href="http://WWW.ALiLA.CA" target="_blank">WWW.ALiLA.CA</a></p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="copyright-year"></span> Hôtel Alila. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="/src/main.js" type="module"></script>
+</body>
+</html>
